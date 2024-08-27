@@ -3,6 +3,9 @@ import Vehicle from './Vehicle.js';
 import Wheel from './Wheel.js';
 // The Truck class should extend the Vehicle class and should implement the AbleToTow interface
 class Truck extends Vehicle {
+    static tow(selectedVehicle) {
+        throw new Error("Method not implemented.");
+    }
     // Create a constructor that accepts the properties of the Truck class
     constructor(vin, color, make, model, year, weight, topSpeed, wheels = [], towingCapacity) {
         // The constructor should call the constructor of the parent class, Vehicle

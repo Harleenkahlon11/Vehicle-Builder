@@ -3,9 +3,13 @@ import Vehicle from './Vehicle.js';
 import Wheel from './Wheel.js';
 // The Truck class should extend the Vehicle class and should implement the AbleToTow interface
 class Truck extends Vehicle {
+  static vin: any;
+  static tow(selectedVehicle: Vehicle) {
+    throw new Error("Method not implemented.");
+  }
     // The properties should include vin, color, make, model, year, weight, top speed, wheels, and towing capacity
     //The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[]), towingCapacity (number)
-        vin: string;
+        override vin: string;
         color: string;
         make: string;
         model: string;

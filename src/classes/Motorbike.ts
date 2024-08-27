@@ -12,7 +12,7 @@ class Motorbike extends Vehicle {
       topSpeed: number;
       color: string;
       model: string;
-      vin: string;
+      override vin: string;
       make: string;
       weight: number;
       year: number;
